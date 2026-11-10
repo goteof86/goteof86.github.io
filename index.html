@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo — Desarrollador Python</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #f4f6f9;
+    }
+    /* Cabecera */
+    header {
+      background: linear-gradient(135deg, #1B3A5C, #2E6DA4);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px 60px;
+    }
+    header h1 { font-size: 2.6rem; margin-bottom: 8px; }
+    header p { font-size: 1.2rem; opacity: 0.92; }
+    /* Contenedor */
+    .contenedor { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+    section { margin: 42px 0; }
+    h2 {
+      color: #1B3A5C;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      border-bottom: 3px solid #2E6DA4;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+    p.intro { font-size: 1.1rem; }
+    /* Tarjetas de habilidades */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+    .tarjeta {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-left: 4px solid #2E6DA4;
+    }
+    .tarjeta h3 { color: #1B3A5C; margin-bottom: 6px; font-size: 1.1rem; }
+    .tarjeta p { font-size: 0.95rem; color: #555; }
+    /* Lista de proyectos */
+    ul.proyectos { list-style: none; }
+    ul.proyectos li {
+      background: #fff;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    ul.proyectos li strong { color: #1E8E5A; }
+    /* Contacto */
+    .contacto {
+      background: #1B3A5C;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      border-radius: 10px;
+    }
+    .contacto a { color: #7FD1AE; text-decoration: none; font-weight: bold; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Leo</h1>
+    <p>Desarrollador Python &bull; Web &bull; Machine Learning</p>
+  </header>
+
+  <div class="contenedor">
+
+    <section>
+      <h2>Sobre mí</h2>
+      <p class="intro">
+        Desarrollador autodidacta apasionado por la programación. He recorrido una
+        ruta completa de cero a experto: desde Python base hasta redes neuronales,
+        construyendo proyectos reales en cada paso. Busco convertir estas
+        habilidades en soluciones útiles para personas y empresas.
+      </p>
+    </section>
+
+    <section>
+      <h2>Mis habilidades</h2>
+      <div class="grid">
+        <div class="tarjeta">
+          <h3>Python</h3>
+          <p>Fundamentos, POO y buenas prácticas de código limpio.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Análisis de datos</h3>
+          <p>Pandas: DataFrames, filtrado y lectura de archivos CSV.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Desarrollo web</h3>
+          <p>Flask y Django: modelos, vistas, formularios, login y CRUD.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Machine Learning</h3>
+          <p>Regresión y clasificación con scikit-learn, modelos en producción.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Deep Learning</h3>
+          <p>Redes neuronales con TensorFlow y Keras.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Backend</h3>
+          <p>Bases de datos, APIs y despliegue de aplicaciones en internet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Proyectos</h2>
+      <ul class="proyectos">
+        <li><strong>Blog con Django:</strong> sistema con registro, login y
+          artículos con permisos por autor, conectado a una base de datos.</li>
+        <li><strong>Predictor de clientes con IA:</strong> un modelo de Machine
+          Learning que predice si un cliente comprará, integrado en vivo en la web.</li>
+        <li><strong>Redes neuronales:</strong> una red que descubre sola la fórmula
+          Celsius a Fahrenheit, y otra que resuelve el problema XOR.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="contacto">
+        <h2 style="color:#fff; border-color:#7FD1AE;">Contacto</h2>
+        <p>¿Tienes un proyecto en mente? Escríbeme:</p>
+        <p style="margin-top:8px;">
+          <a href="mailto:tucorreo@ejemplo.com">goteof86@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Leo &bull; Hecho con HTML y CSS
+  </footer>
+
+</body>
+</html>
